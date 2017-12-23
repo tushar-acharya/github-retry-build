@@ -8,4 +8,4 @@ A chrome extension which adds a retry button at the end of pull request to comme
 - Click on `Load unpacked extension...` and point to the downloaded source.
 - Done
 
-![alt text](https://raw.githubusercontent.com/tushar-acharya/github-retry-build/master/demo/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/tushar-acharya/github-retry-build/master/demo/screenshot.png)
