@@ -9,26 +9,20 @@ function retryButtonExists() {
 }
 
 function validateAndAddRetryButton() {
-    console.log("validateAndAddRetryButton: START");
     if (getActionBar() == undefined) {
-        console.log("No ActionBar. Ignoring Event");
         return;
     }
 
     if (retryButtonExists()) {
-        console.log("Retry Button exists. Ignoring Event");
         return;
     }
 
     var commentAndCloseButton = getActionBar().querySelector("button[name='comment_and_close']");
     var retryButton = createRetryButton();
     commentAndCloseButton.insertAdjacentElement('beforebegin', retryButton);
-    console.log("validateAndAddRetryButton: END");
 }
 
 function process() {
-    console.log("Processing SHIT");
-
     var parent = document.querySelector("#partial-new-comment-form-actions");
 
     if (parent) {
