@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Fucking Test This Please",
+  "description": "This extension allows the updude to retry his PR build.",
+  "version": "1.0",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "page.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>",
+    "http://github.com/*"
+  ],
+  "web_accessible_resources": [
+    "inject.js"
+  ]
+}
